@@ -4,7 +4,6 @@ import "tippy.js/dist/tippy.css";
 import { toggleRTL, toggleTheme, toggleMenu, toggleLayout, toggleAnimation, toggleNavbar, toggleSemidark } from '@/store/themeConfigSlice';
 import { useSelector } from "react-redux";
 import type { IRootState } from '@/store';
-import ReactApexChart from 'react-apexcharts';
 
 
 const tableData = [
@@ -318,7 +317,7 @@ const columnChart: any = {
             <div className="rounded-xl shadow p-4">
                 <h2 className="text-xl font-semibold mb-4">Real-Time Production</h2>
                 {/* Your graph will go here */}
-                <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} />
+                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
             </div>
         </div>
 
@@ -327,7 +326,7 @@ const columnChart: any = {
             <div className="rounded-xl shadow p-4">
                 <h2 className="text-xl font-semibold mb-4">Task Completion</h2>
                 {/* Your graph will go here */}
-                <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} />
+                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
             </div>
 
             {/* Right Column: Graph */}
