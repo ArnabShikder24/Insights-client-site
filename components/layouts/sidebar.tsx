@@ -42,7 +42,7 @@ const sidebarMenuItems = [
     {
         name: 'Reports',
         key: 'reports',
-        icon: IconMenuChat,
+        icon: IconMenuCharts,
         subItems: [
             { name: 'Down Time', href: '/reports/down-time' },
         ],
@@ -50,7 +50,7 @@ const sidebarMenuItems = [
     {
         name: 'Locations',
         key: 'locations',
-        icon: IconMenuChat,
+        icon: IconMenuContacts,
         subItems: [
             { name: 'Locations Operator', href: '/locations/operator' },
             { name: 'Location List', href: '/locations/list' },
@@ -60,7 +60,7 @@ const sidebarMenuItems = [
     {
         name: 'Operator',
         key: 'operator',
-        icon: IconMenuChat,
+        icon: IconMenuUsers,
         subItems: [
             { name: 'Operator Operator', href: '/operator/operator' },
             { name: 'Operator List', href: '/operator/list' },
@@ -70,7 +70,7 @@ const sidebarMenuItems = [
     {
         name: 'Machine',
         key: 'machine',
-        icon: IconMenuChat,
+        icon: IconMenuElements,
         subItems: [
             { name: 'Machine Operator', href: '/machine/operator' },
             { name: 'Machine List', href: '/machine/list' },
@@ -80,7 +80,7 @@ const sidebarMenuItems = [
     {
         name: 'IotDevice',
         key: 'iotdevice',
-        icon: IconMenuChat,
+        icon: IconMenuFontIcons,
         subItems: [
             { name: 'Device Operator', href: '/iotdevice/operator' },
             { name: 'Device List', href: '/iotdevice/list' },
@@ -90,7 +90,7 @@ const sidebarMenuItems = [
     {
         name: 'Line',
         key: 'line',
-        icon: IconMenuChat,
+        icon: IconMenuDragAndDrop,
         subItems: [
             { name: 'Line Operator', href: '/line/operator' },
             { name: 'Line List', href: '/line/list' },
@@ -100,7 +100,7 @@ const sidebarMenuItems = [
     {
         name: 'Status',
         key: 'status',
-        icon: IconMenuChat,
+        icon: IconMenuDatatables,
         subItems: [
             { name: 'Status Operator', href: '/status/operator' },
             { name: 'Status List', href: '/status/list' },
@@ -110,7 +110,7 @@ const sidebarMenuItems = [
     {
         name: 'Task',
         key: 'task',
-        icon: IconMenuChat,
+        icon: IconMenuTodo,
         subItems: [
             { name: 'Task Operator', href: '/task/operator' },
             { name: 'Task List', href: '/task/list' },
@@ -120,7 +120,7 @@ const sidebarMenuItems = [
     {
         name: 'Task Detail',
         key: 'taskdetail',
-        icon: IconMenuChat,
+        icon: IconMenuNotes,
         subItems: [
             { name: 'Task Operator', href: '/task-detail/operator' },
             { name: 'Task List', href: '/task-detail/list' },

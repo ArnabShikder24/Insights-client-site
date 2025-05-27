@@ -1,18 +1,76 @@
-import React from 'react';
+import React from "react";
 
 const Loading = () => {
-    return (
-        <div className="screen_loader animate__animated fixed inset-0 z-[60] grid place-content-center bg-[#fafafa] dark:bg-[#060818]">
-            <svg width="64" height="64" viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill="#4361ee">
-                <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
-                    <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="-360 67 67" dur="2.5s" repeatCount="indefinite" />
-                </path>
-                <path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z">
-                    <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatCount="indefinite" />
-                </path>
-            </svg>
-        </div>
-    );
+  return (
+    <div className="screen_loader animate__animated fixed inset-0 z-[60] grid place-content-center bg-[#fafafa] dark:bg-[#060818]">
+      <div className="animate-pulse w-[200px] h-[200px]">
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 500 500"
+          className="w-full h-full"
+        >
+          <style type="text/css">
+            {`
+              .st0{fill:#941A1D;stroke:#941A1D;stroke-width:0.5;stroke-miterlimit:10;}
+              .st1{font-family:'Century';}
+              .st2{font-size:41.1211px;}
+              .st3{fill:#2E3192;}
+              .st4{font-family:'CooperBlack';}
+              .st5{font-size:55.4427px;}
+              .st6{font-size:52.7221px;}
+              .st7{fill:#662D91;}
+            `}
+          </style>
+          <g>
+            <g>
+              <text
+                transform="matrix(1 0 0 1 120.7153 432.4428)"
+                className="st0 st1 st2"
+              >
+                AUTOMATA
+              </text>
+              <g>
+                <text transform="matrix(0.8399 0 0 1 125.7168 379.767)">
+                  <tspan x="0" y="0" className="st3 st4 st5">
+                    INS
+                  </tspan>
+                  <tspan x="104.71" y="0" className="st3 st4 st6">
+                    I
+                  </tspan>
+                  <tspan x="126.52" y="0" className="st3 st4 st5">
+                    GHTS
+                  </tspan>
+                </text>
+                <circle className="st7" cx="223.32" cy="390.13" r="6.59" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <g>
+                  <polygon
+                    className="st7"
+                    points="283.47,170.44 283.47,170.43 270.78,148.45 258.08,170.43 178.02,309.11 156.3,309.11 
+                      242.46,159.87 229.76,137.88 130.91,309.11 118.21,331.09 143.6,331.09 165.32,331.09 190.72,331.09 203.41,309.11 
+                      203.41,309.11 270.78,192.42 309.74,259.91 322.43,281.9 338.15,309.11 250.47,309.11 266.18,281.9 312.91,281.9 
+                      300.22,259.91 253.48,259.91 212.38,331.09 212.38,331.09 376.23,331.09"
+                  />
+                </g>
+              </g>
+              <polygon
+                className="st3"
+                points="245.17,112.55 232.47,134.54 245.17,156.53 257.87,134.54"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  );
 };
 
 export default Loading;

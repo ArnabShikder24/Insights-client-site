@@ -1,10 +1,35 @@
-<svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.9051 21.4676C31.656 21.4676 34.6966 18.4269 34.6966 14.676C34.6966 10.9252 31.656 7.88452 27.9051 7.88452C24.1543 7.88452 21.1136 10.9252 21.1136 14.676C21.1136 18.4269 24.1543 21.4676 27.9051 21.4676Z" fill="#FFD600" fill-opacity="0.78"/>
-<path d="M55.4467 3.83521L30.1078 47.7297C29.1316 49.4234 26.6787 49.4234 25.6942 47.7297L0.355311 3.83521C-0.946256 1.5825 1.58177 -0.945529 3.83449 0.356038L16.5248 7.6815C17.843 8.44075 18.5272 9.99263 18.11 11.4527C17.7429 12.7543 17.6177 14.156 17.8096 15.6161C18.4104 20.2133 22.1565 23.876 26.7704 24.3766C32.9112 25.0441 38.1008 20.2467 38.1008 14.2478C38.1008 13.3217 37.9756 12.4206 37.742 11.5695C37.3332 10.0594 37.9339 8.46578 39.2855 7.68985L51.9841 0.356038C54.2285 -0.945529 56.7482 1.57416 55.4467 3.83521Z" fill="url(#paint0_linear_106_6)"/>
-<defs>
-<linearGradient id="paint0_linear_106_6" x1="13.3494" y1="3.52653" x2="40.4654" y2="43.5748" gradientUnits="userSpaceOnUse">
-<stop stop-color="#EF1262"/>
-<stop offset="1" stop-color="#4361EE"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#941A1D;stroke:#941A1D;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{font-family:'Century';}
+	.st2{font-size:41.1211px;}
+	.st3{fill:#2E3192;}
+	.st4{font-family:'CooperBlack';}
+	.st5{font-size:55.4427px;}
+	.st6{font-size:52.7221px;}
+	.st7{fill:#662D91;}
+</style>
+<g>
+	<g>
+		<text transform="matrix(1 0 0 1 120.7153 432.4428)" class="st0 st1 st2">AUTOMATA</text>
+		<g>
+			<text transform="matrix(0.8399 0 0 1 125.7168 379.767)"><tspan x="0" y="0" class="st3 st4 st5">INS</tspan><tspan x="104.71" y="0" class="st3 st4 st6">I</tspan><tspan x="126.52" y="0" class="st3 st4 st5">GHTS</tspan></text>
+			<circle class="st7" cx="223.32" cy="390.13" r="6.59"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<polygon class="st7" points="283.47,170.44 283.47,170.43 270.78,148.45 258.08,170.43 178.02,309.11 156.3,309.11 
+					242.46,159.87 229.76,137.88 130.91,309.11 118.21,331.09 143.6,331.09 165.32,331.09 190.72,331.09 203.41,309.11 
+					203.41,309.11 270.78,192.42 309.74,259.91 322.43,281.9 338.15,309.11 250.47,309.11 266.18,281.9 312.91,281.9 300.22,259.91 
+					253.48,259.91 212.38,331.09 212.38,331.09 376.23,331.09 				"/>
+			</g>
+		</g>
+		<polygon class="st3" points="245.17,112.55 232.47,134.54 245.17,156.53 257.87,134.54 		"/>
+	</g>
+</g>
 </svg>
