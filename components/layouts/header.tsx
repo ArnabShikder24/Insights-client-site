@@ -445,7 +445,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="border-t border-white-light dark:border-white-light/10">
-                                        <Link href="/auth/boxed-signin" className="!py-3 text-danger">
+                                        <Link href="/auth/login" className="!py-3 text-danger">
                                             <IconLogout className="h-4.5 w-4.5 shrink-0 rotate-90 ltr:mr-2 rtl:ml-2" />
                                             Sign Out
                                         </Link>
@@ -870,12 +870,12 @@ const Header = () => {
                                 </button>
                                 <ul className="absolute top-0 z-[10] hidden min-w-[180px] rounded bg-white p-0 py-2 text-dark shadow ltr:left-[95%] rtl:right-[95%] dark:bg-[#1b2e4b] dark:text-white-dark">
                                     <li>
-                                        <Link href="/auth/cover-login" target="_blank">
+                                        <Link href="/auth/login" target="_blank">
                                             {t('login_cover')}
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/auth/boxed-signin" target="_blank">
+                                        <Link href="/auth/login" target="_blank">
                                             {t('login_boxed')}
                                         </Link>
                                     </li>
@@ -890,12 +890,12 @@ const Header = () => {
                                 </button>
                                 <ul className="absolute top-0 z-[10] hidden min-w-[180px] rounded bg-white p-0 py-2 text-dark shadow ltr:left-[95%] rtl:right-[95%] dark:bg-[#1b2e4b] dark:text-white-dark">
                                     <li>
-                                        <Link href="/auth/cover-register" target="_blank">
+                                        <Link href="/auth/register" target="_blank">
                                             {t('register_cover')}
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/auth/boxed-signup" target="_blank">
+                                        <Link href="/auth/register" target="_blank">
                                             {t('register_boxed')}
                                         </Link>
                                     </li>
