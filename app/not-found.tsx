@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-    title: 'Error 404',
+    title: 'Error 404 - Page Not Found',
 };
 
 const NotFound = () => {
