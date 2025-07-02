@@ -58,23 +58,8 @@ const tableData2 = [
       errorCode: 9,
       taskDetailId: "N/A",
       timestamp: "2/4/2025, 8:17:03 PM",
-    },
-    {
-      id: 3,
-      machineId: "swe2",
-      alertType: "Cutting Tolls",
-      errorCode: 9,
-      taskDetailId: "N/A",
-      timestamp: "2/4/2025, 8:17:03 PM",
-    },
-    {
-      id: 4,
-      machineId: "swe2",
-      alertType: "Cutting Tolls",
-      errorCode: 9,
-      taskDetailId: "N/A",
-      timestamp: "2/4/2025, 8:17:03 PM",
-    },
+    }
+
 ];
 
 const tableData3 = [
@@ -312,23 +297,6 @@ const columnChart: any = {
                 </table>
                 </div>
             </div>
-
-            {/* Right Column: Graph */}
-            <div className="rounded-xl shadow p-4">
-                <h2 className="text-xl font-semibold mb-4">Real-Time Production</h2>
-                {/* Your graph will go here */}
-                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
-            </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4">
-            {/* Left Column: Table */}
-            <div className="rounded-xl shadow p-4">
-                <h2 className="text-xl font-semibold mb-4">Task Completion</h2>
-                {/* Your graph will go here */}
-                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
-            </div>
-
             {/* Right Column: Graph */}
             <div className="rounded-xl shadow p-4">
                 <h2 className="text-xl font-semibold mb-4">Operator Performance</h2>
@@ -357,6 +325,23 @@ const columnChart: any = {
                     </tbody>
                 </table>
                 </div>
+            </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4">
+            {/* Left Column: Table */}
+            <div className="rounded-xl shadow p-4">
+                <h2 className="text-xl font-semibold mb-4">Task Completion</h2>
+                {/* Your graph will go here */}
+                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
+            </div>
+
+           
+            {/* Right Column: Graph */}
+            <div className="rounded-xl shadow p-4">
+                <h2 className="text-xl font-semibold mb-4">Real-Time Production</h2>
+                {/* Your graph will go here */}
+                {/* <ReactApexChart series={columnChart.series} options={columnChart.options} className="rounded-lg bg-white dark:bg-black overflow-hidden" type="bar" height={300} /> */}
             </div>
         </div>
 
