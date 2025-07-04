@@ -1,4 +1,3 @@
-// components/AuthGuard.tsx
 'use client';
 
 import { useEffect } from 'react';
@@ -17,18 +16,16 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('authToken');
 
-    if (!token) {
-      // No token: clear any existing data and redirect to login
+    // If user is not logged in and trying to access a private route
+    if (!token && !PUBLIC_ROUTES.includes(pathname)) {
       localStorage.removeItem('authToken');
       localStorage.removeItem('userData');
-      if (pathname !== '/auth/login') {
-        router.replace('/auth/login');
-      }
-    } else {
-      // Has token: prevent access to public routes
-      if (PUBLIC_ROUTES.includes(pathname)) {
-        router.replace('/');
-      }
+      router.replace('/auth/login');
+    }
+
+    // If user is logged in and trying to access login/register, redirect to home
+    if (token && PUBLIC_ROUTES.includes(pathname)) {
+      router.replace('/');
     }
   }, [pathname, router]);
 
