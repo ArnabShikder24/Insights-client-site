@@ -83,8 +83,8 @@ const sidebarMenuItems = [
         icon: IconMenuFontIcons,
         subItems: [
             { name: 'Device Operator', href: '/iotdevice/operator' },
-            { name: 'Device List', href: '/iotdevice/list' },
-            { name: 'Add Or Edit', href: '/iotdevice/add-or-edit' },
+            // { name: 'Device List', href: '/iotdevice/list' },
+            // { name: 'Add Or Edit', href: '/iotdevice/add-or-edit' },
         ],
     },
     {
