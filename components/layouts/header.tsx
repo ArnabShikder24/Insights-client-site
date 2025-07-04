@@ -34,11 +34,58 @@ import IconMenuMore from '@/components/icon/menu/icon-menu-more';
 import { usePathname, useRouter } from 'next/navigation';
 import { getTranslation } from '@/i18n';
 
+interface AuthData {
+  _id: string;
+  name: string;
+  email: string;
+  role: string;
+  isActive: boolean;
+}
+
 const Header = () => {
     const pathname = usePathname();
     const dispatch = useDispatch();
     const router = useRouter();
     const { t, i18n } = getTranslation();
+
+    const [authToken, setAuthToken] = useState<string | null>(null);
+    const [authData, setAuthData] = useState<AuthData | null>(null);
+    console.log(authData);
+
+    useEffect(() => {
+        try {
+        const token = localStorage.getItem('authToken');
+        const user = localStorage.getItem('userData');
+
+        if (token) setAuthToken(token);
+
+        if (user) {
+            const parsed = JSON.parse(user) as AuthData;
+            if (parsed.name && parsed.email) {
+                setAuthData(parsed);
+            } else {
+                throw new Error('Invalid userData structure');
+            }
+        }
+        } catch (error) {
+            console.error('Failed to load authData:', error);
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('userData');
+        }
+    }, []);
+
+    const handleLogout = () => {
+        try {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('userData');
+            router.replace('/auth/login');
+        } catch (error) {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('userData');
+            router.replace('/auth/login');
+            console.error('Logout failed:', error);
+        }
+    };
 
     useEffect(() => {
         if (typeof window !== 'undefined') { 
@@ -409,19 +456,27 @@ const Header = () => {
                                 offset={[0, 8]}
                                 placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
                                 btnClassName="relative group block"
-                                button={<img className="h-9 w-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="/assets/images/minhaj.jpg" alt="userProfile" />}
+                                button={<img className="h-9 w-9 rounded-full object-cover saturate-50 group-hover:saturate-100" src="/assets/images/auth/user.png" alt="userProfile" />}
                             >
                                 <ul className="w-[230px] !py-0 font-semibold text-dark dark:text-white-dark dark:text-white-light/90">
                                     <li>
                                         <div className="flex items-center px-4 py-4">
-                                            <img className="h-10 w-10 rounded-md object-cover" src="/assets/images/minhaj.jpg" alt="userProfile" />
+                                            <img className="h-10 w-10 rounded-md object-cover" src="/assets/images/auth/user.png" alt="userProfile" />
                                             <div className="truncate ltr:pl-4 rtl:pr-4">
                                                 <h4 className="text-base">
-                                                    Minhaj CSE
-                                                    <span className="rounded bg-success-light px-1 text-xs text-success ltr:ml-2 rtl:ml-2">Pro</span>
+                                                    {authData?.name || "user Invelid"}
+                                                    {
+                                                        authData?.role === 'admin' ? (
+                                                            <span className="rounded bg-primary-light px-1 text-xs text-primary ltr:ml-2 rtl:ml-2">Admin</span>
+                                                        ) : authData?.role === 'operator' ? (
+                                                            <span className="rounded bg-success-light px-1 text-xs text-success ltr:ml-2 rtl:ml-2">operator</span>
+                                                        ) : (
+                                                            <span className="rounded bg-warning-light px-1 text-xs text-warning ltr:ml-2 rtl:ml-2">User</span>
+                                                        )
+                                                    }
                                                 </h4>
                                                 <button type="button" className="text-black/60 hover:text-primary dark:text-dark-light/60 dark:hover:text-white">
-                                                    Minhaj@gmail.com
+                                                    {authData?.email || "user Invelid"}
                                                 </button>
                                             </div>
                                         </div>
@@ -445,10 +500,10 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="border-t border-white-light dark:border-white-light/10">
-                                        <Link href="/auth/login" className="!py-3 text-danger">
+                                        <div onClick={handleLogout} className="!py-3 text-danger flex items-center px-4 cursor-pointer hover:text-danger/80">
                                             <IconLogout className="h-4.5 w-4.5 shrink-0 rotate-90 ltr:mr-2 rtl:ml-2" />
                                             Sign Out
-                                        </Link>
+                                        </div>
                                     </li>
                                 </ul>
                             </Dropdown>
