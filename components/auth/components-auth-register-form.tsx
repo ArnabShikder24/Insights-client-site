@@ -45,7 +45,7 @@ const ComponentsAuthRegisterForm = () => {
             const requestBody = {
                 name: formData.name,
                 email: formData.email,
-                role: "admin", // Default role as per your example
+                role: "operator", // Default role as per your example
                 password: formData.password
             };
 
