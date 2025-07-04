@@ -63,8 +63,8 @@ const sidebarMenuItems = [
         icon: IconMenuUsers,
         subItems: [
             { name: 'Operator Operator', href: '/operator/operator' },
-            { name: 'Operator List', href: '/operator/list' },
-            { name: 'Add Or Edit', href: '/operator/add-or-edit' },
+            // { name: 'Operator List', href: '/operator/list' },
+            // { name: 'Add Or Edit', href: '/operator/add-or-edit' },
         ],
     },
     {
