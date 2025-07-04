@@ -63,8 +63,8 @@ const sidebarMenuItems = [
         icon: IconMenuUsers,
         subItems: [
             { name: 'Operator Operator', href: '/operator/operator' },
-            { name: 'Operator List', href: '/operator/list' },
-            { name: 'Add Or Edit', href: '/operator/add-or-edit' },
+            // { name: 'Operator List', href: '/operator/list' },
+            // { name: 'Add Or Edit', href: '/operator/add-or-edit' },
         ],
     },
     {
@@ -83,8 +83,8 @@ const sidebarMenuItems = [
         icon: IconMenuFontIcons,
         subItems: [
             { name: 'Device Operator', href: '/iotdevice/operator' },
-            { name: 'Device List', href: '/iotdevice/list' },
-            { name: 'Add Or Edit', href: '/iotdevice/add-or-edit' },
+            // { name: 'Device List', href: '/iotdevice/list' },
+            // { name: 'Add Or Edit', href: '/iotdevice/add-or-edit' },
         ],
     },
     {
@@ -269,7 +269,7 @@ const Sidebar = () => {
                                 <Link href="/" className="group">
                                     <div className="flex items-center">
                                         <IconMenuDashboard className="shrink-0 group-hover:!text-primary" />
-                                        <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">{t('dashboard')}</span>
+                                        <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#fff] dark:group-hover:text-white-dark">{t('dashboard')}</span>
                                     </div>
                                 </Link>
                             </li>
@@ -283,7 +283,7 @@ const Sidebar = () => {
                                     >
                                         <div className="flex items-center">
                                             <menu.icon className="shrink-0 group-hover:!text-primary" />
-                                            <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
+                                            <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#fff] dark:group-hover:text-white-dark">
                                                 {t(menu.name)}
                                             </span>
                                         </div>
