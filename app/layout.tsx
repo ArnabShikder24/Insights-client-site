@@ -6,7 +6,7 @@ import { Nunito } from 'next/font/google';
 
 export const metadata: Metadata = {
     title: {
-        template: '%s | VRISTO - Multipurpose Tailwind Dashboard Template',
+        template: '%s | Insights Automata',
         default: 'SOEMS - Insights Automata',
     },
 };
