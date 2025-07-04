@@ -208,8 +208,8 @@ const columnChart: any = {
     },
 };
 
-    return <div>
-            <div className="flex items-center gap-2 text-gray-500"><span>{">"}</span> Dashboard</div>
+    return <div className="dark:text-white">
+            <div className="flex items-center gap-2 text-gray-500 dark:text-white"><span>{">"}</span> Dashboard</div>
 
             <div className="text-center my-5">
                 <h1 className="text-xl">Live Task Status</h1>
