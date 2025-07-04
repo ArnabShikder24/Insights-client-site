@@ -78,7 +78,7 @@ const sidebarMenuItems = [
         ],
     },
     {
-        name: 'IotDevice',
+        name: 'IoT Device',
         key: 'iotdevice',
         icon: IconMenuFontIcons,
         subItems: [
